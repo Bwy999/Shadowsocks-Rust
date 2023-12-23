@@ -1,5 +1,5 @@
 # Shadowsocks-Rust 服务构建与优化
-## 1. **准备**：
+## 1. 准备：
 - VPS 服务器
 - 系统版本：Debian 10-12
 - VPS root 用户操作
@@ -81,7 +81,7 @@ obfs-local -h
 simple-obfs 0.0.5
 ```
 
-## 4. 配置文件如下，如需自定义端口，密码，请自行修改
+## 4. 配置文件修改与服务启动，如需自定义端口，密码，请自行修改
 
    ```
    /etc/shadowsocks/shadowsocks-rust-config.json
@@ -98,27 +98,25 @@ simple-obfs 0.0.5
    }
    ```
 
-   
-
-5. 启动服务端
+(1) 启动服务端
 
 ```
 systemctl start shadowsocks-rust-server
 ```
 
-6.查看服务端状态
+(2) 查看服务端状态
 
 ```
 systemctl status shadowsocks-rust-server
 ```
 
-7.停止服务端
+(3) 停止服务端
 
 ```
 systemctl status shadowsocks-rust-server
 ```
 
-8.设置服务端 service 开机自启动
+(4) 设置服务端 service 开机自启动
 
 ```
 systemctl enable shadowsocks-rust-server
