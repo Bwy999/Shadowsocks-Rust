@@ -1,12 +1,12 @@
 # Shadowsocks-Rust 服务构建与优化
-1. **准备**：
+## 1. **准备**：
 - VPS 服务器
 - 系统版本：Debian 10-12
 - VPS root 用户操作
 
-## ** [Shadowsocks-Rust](https://crates.io/crates/shadowsocks-rust) 安装**
+## 2.[Shadowsocks-Rust](https://crates.io/crates/shadowsocks-rust) 安装
 
-###### **1.添加 Teddysun Shadowsocks Repository 的公钥:**
+**1.添加 Teddysun Shadowsocks Repository 的公钥:**
 
 ```
 apt-get update
