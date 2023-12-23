@@ -1,2 +1,2 @@
-# Shadowsocks-rust
-Shadowsocks-Rust+Simple Obfs
+# Shadowsocks-Rust 服务构建与优化
+
