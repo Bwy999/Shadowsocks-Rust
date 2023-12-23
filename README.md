@@ -89,12 +89,16 @@ simple-obfs 0.0.5
 
    ```json
    {
-       "server": "my_server_ip",
-       "server_port": 8388,
-       "password":"rwQc8qPXVsRpGx3uW+Y3Lj4Y42yF9Bs0xg1pmx8/+bo=",
+       "server": "your_server_ip",
+       "server_port": 2100,
+       "local_port":1080,
+       "password": "rwQc8qPXVsRpGx3uW+Y3Lj4Y42yF9Bs0xg1pmx8/+bo=",
        "method": "aes-256-gcm",
-       "local_address": "127.0.0.1",
-       "local_port": 1080
+       "timeout": 60,
+       "fast_open":true,
+       "mode":"tcp_and_udp",
+       "plugin":"obfs-server",
+       "plugin_opts":"obfs=tls"
    }
    ```
 
