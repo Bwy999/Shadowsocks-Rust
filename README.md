@@ -136,3 +136,10 @@ systemctl status shadowsocks-rust-server
 ```
 systemctl enable shadowsocks-rust-server
 ```
+### 致谢
+[clowwindy](https://github.com/clowwindy)
+[Max LV](https://github.com/madeye)
+[zonyitoo](https://github.com/zonyitoo)
+[Teddysun](https://teddysun.com/666.html)
+[iMeiji](https://github.com/iMeiji)
+[jinwp](https://github.com/jinwyp/one_click_script)
