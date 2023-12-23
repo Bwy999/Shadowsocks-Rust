@@ -102,6 +102,17 @@ simple-obfs 0.0.5
    }
    ```
 
+## 5. Shadowsocks-Rust 服务端优化
+**安装 linux 新版内核 开启 BBR Plus 加速**
+(1) Debian 系统安装新版 linux 内核. 运行脚本后 Debian 请选择 43 安装 6.1 最新内核. 根据提示需要重启2次 完成内核安装。
+(2) 开启 BBR 网络加速. 完成上面更换新内核后, 重新运行脚本后 选择 2 然后根据提示选择 BBR 加速, 推荐使用BBR + Cake 组合算法.
+(3) 安装 BBR Plus 内核并开启 BBR Plus. 运行脚本后 选择61 安装原版4.14.129版本 BBR Plus 内核,安装完成重启2次后, 重新运行脚本后 选择 3 根据提示开始 BBR Plus,推荐使用BBR Plus + Cake 组合算法。
+    注意安装过程中 如果弹出大框的英文提示(下面有示例图) "安装linux内核有风险是否终止", 要选择" NO" 不终止. 安装完毕会重启VPS.
+```
+bash <(curl -Lso- https://git.io/kernel.sh)
+```
+
+## 6. Shadowsocks-Rust 服务启动与管理
 (1) 启动服务端
 
 ```
@@ -125,5 +136,3 @@ systemctl status shadowsocks-rust-server
 ```
 systemctl enable shadowsocks-rust-server
 ```
-
-
