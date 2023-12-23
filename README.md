@@ -4,9 +4,9 @@
 - 系统版本：Debian 10-12
 - VPS root 用户操作
 
-## 2.[Shadowsocks-Rust](https://crates.io/crates/shadowsocks-rust) 安装
+## 2. [Shadowsocks-Rust](https://crates.io/crates/shadowsocks-rust) 安装
 
-**1.添加 Teddysun Shadowsocks Repository 的公钥:**
+(1) 添加 Teddysun Shadowsocks Repository 的公钥:
 
 ```
 apt-get update
@@ -18,57 +18,57 @@ curl -fsSL https://dl.lamp.sh/shadowsocks/DEB-GPG-KEY-Teddysun | gpg --dearmor -
 chmod a+r /usr/share/keyrings/deb-gpg-key-teddysun.gpg
 ```
 
-2. ###### 执行以下命令直接安装 Teddysun Shadowsocks Repository：
+(2) 执行以下命令直接安装 Teddysun Shadowsocks Repository：
 
 ```
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/deb-gpg-key-teddysun.gpg] https://dl.lamp.sh/shadowsocks/debian/ $(lsb_release -sc) main" >/etc/apt/sources.list.d/teddysun.list
 ```
 
-3.**重建 repo 缓存，执行如下命令：**
+(3) 重建 repo 缓存，执行如下命令：
 
 ```
 apt-get update
 ```
 
-**4. 通过 apt-get 来安装 Shadowsocks-Rust 软件包**
+(4) 通过 apt-get 来安装 Shadowsocks-Rust 软件包
 
 ```
 apt-get install -y shadowsocks-rust
 ```
 
-**5. 以后软件若有升级，也可通过 apt-get 来升级软件包**
+(5) 以后软件若有升级，也可通过 apt-get 来升级软件包
 
 ```
 apt-get install --only-upgrade -y shadowsocks-rust
 ```
 
-**6. 若想卸载，也可通过 apt-get 来卸载软件包**
+(6) 若想卸载，也可通过 apt-get 来卸载软件包
 
 ```
 apt-get remove shadowsocks-rust
 ```
 
-**7. 成功安装后，执行以下命令查看版本号：**
+(7) 成功安装后，执行以下命令查看版本号：
 
 ```
 ssservice --version
 ```
 
-​     返回值：
+​    返回值：
 
 ```
 shadowsocks 1.17.1
 ```
 
-3.  **[Simple-Obfs](https://github.com/shadowsocks/simple-obfs) 安装**
+## **3. [simple-obfs](https://github.com/shadowsocks/simple-obfs) 安装**
 
-    1.安装 simple-obfs 软件包
+(1) 安装 simple-obfs 软件包
 
 ```
 install -y shadowsocks-simple-obfs
 ```
 
-2.成功安装后，执行以下命令查看版本号：
+(2) 成功安装后，执行以下命令查看版本号：
 
 ```
 obfs-server -h
@@ -81,7 +81,7 @@ obfs-local -h
 simple-obfs 0.0.5
 ```
 
-4. 配置文件如下，如需自定义端口，密码，请自行修改
+## 4. 配置文件如下，如需自定义端口，密码，请自行修改
 
    ```
    /etc/shadowsocks/shadowsocks-rust-config.json
