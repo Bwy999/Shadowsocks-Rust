@@ -65,7 +65,7 @@ shadowsocks 1.17.1
 (1) 安装 simple-obfs 软件包
 
 ```
-install -y shadowsocks-simple-obfs
+apt-get install -y shadowsocks-simple-obfs
 ```
 
 (2) 成功安装后，执行以下命令查看版本号：
